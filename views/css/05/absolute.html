@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .big-box{
+            border:1px solid yellow;
+            width:500px ;
+            height:500px;
+            background-color: aliceblue;
+            position:relative;
+            left:100px;
+        }
+        .first{
+            border:1px solid yellow;
+            position:absolute;
+            top:100px;
+            width:300px ;
+            height:300px;
+            background-color: #ff6d6d;
+            z-index: 10;
+            left:40px;
+        }
+        .second{
+            background-color: aqua;
+            z-index: 10;
+            top:200px;
+            left: 150px;
+            width:50px;
+            height:50px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="big-box">
+   <div class="first"></div>
+    <div class="first second"></div>
+</div>
+</body>
+</html>
